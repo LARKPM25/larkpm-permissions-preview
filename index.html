@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>LarkPM — Permissions allocation · two options</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;600;700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="_shared.css" />
+</head>
+<body>
+<nav class="topnav">
+  <div class="inner">
+    <span class="font-newsreader" style="font-weight:600">LarkPM</span>
+    <a href="index.html" class="current">Index</a>
+    <a href="option-a-module-packs.html">Option A — Packs</a>
+    <a href="option-b-granular-matrix.html">Option B — Matrix</a>
+    <span class="draft-pill">Draft · not production</span>
+  </div>
+</nav>
+<div class="wrap">
+  <div class="head">
+    <div class="sub">Colleagues → Permissions</div>
+    <h1>Two ways to allocate access</h1>
+    <p>
+      Both options keep <strong>named roles with a base set</strong> plus
+      <strong>add-ons organized by module</strong>. They differ in what an add-on
+      is, and how wide the Administrator base stays. Hub write-up:
+      C-LarkPM <code>docs/permissions-evaluation-2026-08-26.md</code> ([PERM-EVAL-1]).
+    </p>
+  </div>
+
+  <div class="cards">
+    <a class="card" href="option-a-module-packs.html">
+      <span class="tag">Proposal 1</span>
+      <h2>Option A — Slim role + module packs</h2>
+      <p>Administrator is a small office floor. Marketing, Financial, Production, and the rest are named packs you turn on. Stops “make them Admin” from unlocking Marketing.</p>
+      <div class="open">Open Option A →</div>
+    </a>
+    <a class="card" href="option-b-granular-matrix.html">
+      <span class="tag">Proposal 2</span>
+      <h2>Option B — Current widths + module matrix</h2>
+      <p>Roles stay roughly as they are. Add-ons are individual permissions, grouped by module, with origin badges (base / add-on / revoked). Smallest behavior change.</p>
+      <div class="open">Open Option B →</div>
+    </a>
+  </div>
+
+  <p class="footer-note">
+    Scene in both mocks: Pascale, Deck Creations, role Administrator.
+    Today she sees Marketing because that role’s default set includes it, and
+    deploys used to restore any default she had unchecked. Phase 0 stops the
+    restore. These screens are how you would <em>allocate</em> after that.
+  </p>
+</div>
+</body>
+</html>
